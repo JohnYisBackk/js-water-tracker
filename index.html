@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Water Tracker PRO</title>
+  </head>
+  <body>
+    <main class="water-app">
+      <section class="app-card">
+        <header class="app-header">
+          <div>
+            <p class="app-label">Water Tracker PRO</p>
+            <h1>Hydration</h1>
+          </div>
+
+          <div class="day-pill">
+            <span>Today</span>
+          </div>
+        </header>
+
+        <section class="water-visual">
+          <div class="drop">
+            <div id="waterFill" class="water-fill"></div>
+
+            <div class="drop-content">
+              <span id="progressText">0%</span>
+              <p id="currentAmount">0 ml</p>
+              <small id="goalText">of 2500 ml</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="goal-panel">
+          <label for="goalInput">Daily goal</label>
+
+          <div class="goal-control">
+            <input type="number" id="goalInput" value="2500" min="500" />
+            <span>ml</span>
+          </div>
+        </section>
+
+        <section class="quick-panel">
+          <button class="water-btn" data-amount="250">+250 ml</button>
+          <button class="water-btn" data-amount="500">+500 ml</button>
+          <button class="water-btn" data-amount="750">+750 ml</button>
+        </section>
+
+        <section class="custom-panel">
+          <input
+            type="number"
+            id="customInput"
+            placeholder="Custom amount..."
+            min="1"
+          />
+
+          <button id="addCustomBtn">Add</button>
+        </section>
+
+        <section class="actions">
+          <button id="resetBtn">Reset Day</button>
+        </section>
+
+        <section class="history-section">
+          <div class="history-top">
+            <h2>Hydration Log</h2>
+            <span id="entryCount">0 entries</span>
+          </div>
+
+          <div id="historyList" class="history-list">
+            <!-- History will be rendered is JS -->
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
