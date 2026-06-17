@@ -23,7 +23,7 @@ Track your daily water intake, set hydration goals, monitor progress in real tim
 
 ## 🚀 Live Demo
 
-🔗 **Live Demo:**  
+🔗 **Live Demo:**  https://johnyisbackk.github.io/js-water-tracker/
 
 ---
 
